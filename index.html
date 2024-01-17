@@ -5,60 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Subrata Bera</title>
-    <link class="border-radius-50%" rel="icon" href="img/home-img.jpg">
+    <link rel="icon" href="img/home-img.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .service {
-            background-color: white;
-        }
-
-        @media (min-width:500px) {
-            .service {
-                transition: 0.3s;
-            }
-
-            .service:hover {
-                transform: translateY(-10px);
-                cursor: pointer;
-                background-color: #dc3545;
-                color: white;
-            }
-
-            .service:hover svg {
-                color: white;
-            }
-
-            .portfolio-items img {
-                transition: 0.3s;
-            }
-
-            .portfolio-items img:hover {
-                transform: scale(0.95);
-            }
-
-            .social-links svg {
-                transition: 0.3s;
-            }
-
-            .social-links svg:hover {
-                transform: translateY(-5px);
-            }
-
-            .portfolio-items img {
-                height: 500px;
-            }
-        }
-    </style>
 </head>
 
 <body class="bg-light">
     <div class="main">
         <!-- --------------------Navbar-------------------- -->
         <nav class="navbar bg-body-tertiary fixed-top shadow-sm">
-            <div class="container-lg">
-                <span class="navbar-brand mb-0 h1 text-danger fw-bold fs-4 text-uppercase">portfolio</span>
+            <div class="container-lg nav">
+                <!-- <span class="navbar-brand mb-0 h1 text-danger fw-bold fs-4 text-uppercase">portfolio</span> -->
+                <img class="flag" src="img/flag.png" alt="">
+                <div class="nav-ul">
+                    <ul>
+                        <li class="text-uppercase"><a href="#home">home <span></span></a></li>
+                        <li class="text-uppercase"><a href="#about">about <span></span></a></li>
+                        <li class="text-uppercase"><a href="#services">services <span></span></a></li>
+                        <li class="text-uppercase"><a href="#portfolio">portfolio <span></span></a></li>
+                        <li class="text-uppercase"><a href="#achievements">achievements <span></span></a></li>
+                        <li class="text-uppercase"><a href="#contact">contact <span></span></a></li>
+                    </ul>
+                </div>
                 <div class="dropdown">
                     <button class="btn btn-secondary btn-danger px-3" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -248,8 +217,8 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded service" data-aos="flip-right">
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-right">
+                        <div class="service-item shadow-sm p-4 rounded service">
                             <div class="icon my-3 text-danger">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                                     class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -263,8 +232,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded service" data-aos="flip-right">
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-right">
+                        <div class="service-item shadow-sm p-4 rounded service">
                             <div class="icon my-3 text-danger">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                                     class="bi bi-filetype-java" viewBox="0 0 16 16">
@@ -278,8 +247,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item shadow-sm p-4 rounded service" data-aos="flip-right">
+                    <div class="col-md-6 col-lg-4" data-aos="flip-right">
+                        <div class="service-item shadow-sm p-4 rounded service">
                             <div class="icon my-3 text-danger">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                                     class="bi bi-crop" viewBox="0 0 16 16">
@@ -386,8 +355,8 @@
                             </div>
                             <div class="text ms-3">
                                 <h3 class="fs-5">Email</h3>
-                                <p class="text-danger text-decoration-none">
-                                    abcd@gmail.com</p>
+                                <p><a href="mailto:"
+                                        class="text-danger text-decoration-none">xyz@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item d-flex mb-3">
@@ -400,7 +369,8 @@
                             </div>
                             <div class="text ms-3">
                                 <h3 class="fs-5">Call</h3>
-                                <p class="text-danger text-decoration-none">>+91 0000000000</p>
+                                <p><a href="tel:" class="text-danger text-decoration-none">+91
+                                        0000000000</a></p>
                             </div>
                         </div>
                         <div class="contact-item d-flex mb-3">
@@ -460,7 +430,7 @@
             </div>
         </footer>
     </div>
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -468,10 +438,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-        duration: 1000,
-        
-    once: true});
+            duration: 1000,
+        });
     </script>
+
 </body>
 
 </html>

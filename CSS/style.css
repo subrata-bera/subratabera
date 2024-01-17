@@ -1,0 +1,97 @@
+
+.flag{
+    width: 8vmax;
+    /* width: 8%; */
+}
+.service {
+    background-color: white;
+}
+.dropdown{
+    display: none;
+}
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-ul ul{
+    display: flex;
+    gap: 1.5vw;
+    font-weight: 500;
+}
+.nav-ul ul li{
+    margin-top: 1.2vh;
+    list-style: none;
+    text-transform: capitalize;
+    position: relative;  
+    font-size: 3vh;
+}
+.nav-ul ul li a{
+    text-decoration: none;
+    color: #dc3545;
+}
+
+.nav-ul ul li::after{
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+    height: 0.4vh;
+    width: 0%;
+    background-color: orangered;
+    transition: 0.3s;
+}
+@media (min-width:800px) {
+    .service {
+        transition: 0.3s;
+    }
+
+    .service:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .service:hover svg {
+        color: white;
+    }
+
+    .portfolio-items img {
+        transition: 0.3s;
+    }
+
+    .portfolio-items img:hover {
+        transform: scale(0.95);
+    }
+
+    .social-links svg {
+        transition: 0.3s;
+    }
+
+    .social-links svg:hover {
+        transform: translateY(-5px);
+    }
+
+    .portfolio-items img {
+        height: 500px;
+    }
+    .nav-ul ul li:hover::after{
+        width: 100%;
+    }
+    
+   
+   
+}
+@media (max-width:650px){
+    .dropdown{
+        display: block;
+    }
+    .nav-ul ul{
+        display: none;
+    }
+}
+
+/* ------------------------------------Education---------------------------- */
+ 
