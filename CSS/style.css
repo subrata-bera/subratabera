@@ -43,55 +43,48 @@
     transition: 0.3s;
 }
 /* --------------------------Education------------------------- */
-.education{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.tab-titles {
-    display: flex;
-    margin: 2vw 0 2vw;
+.education {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.tab-links {
-    margin-right: 7vw;
-    /* font-size: 1.6vmax; */
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-
+.education h2 {
+    color: #333;
+    
 }
 
-.tab-links::after {
-    content: " ";
-    width: 0%;
-    height: 3px;
-    background-color: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.3s;
+.education-item {
+    margin-bottom: 30px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
 }
 
-.tab-links.active-links::after {
-    width: 100%;
+.education-item h3 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .education {
+        padding: 30px;
+    }
 }
 
 
-.tab-contents ul li {
-    list-style: none;
-    margin: 2vw 0;
-    line-height: 2.5vmax;
+/* ------------------Snappy Effect-------------------------------- */
+
+.main{
+    /* height: 100%;
+    width: 100%; */
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
+.scroll-snap{
+    scroll-snap-align: start;
+    /* background-color: red; */
 }
 
 
