@@ -42,56 +42,6 @@
     background-color: orangered;
     transition: 0.3s;
 }
-/* --------------------------Education------------------------- */
-.education {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.education h2 {
-    color: #333;
-    
-}
-
-.education-item {
-    margin-bottom: 30px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.education-item h3 {
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .education {
-        padding: 30px;
-    }
-}
-
-
-/* ------------------Snappy Effect-------------------------------- */
-
-.main{
-    /* height: 100%;
-    width: 100%; */
-    scroll-snap-type: y mandatory;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-.scroll-snap{
-    scroll-snap-align: start;
-    /* background-color: red; */
-}
-
-
-
-
- 
-
 @media (min-width:800px) {
     .service {
         transition: 0.3s;
